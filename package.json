@@ -1,0 +1,30 @@
+{
+  "name": "abhivyakti2022",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "check-types": "tsc --pretty --noEmit",
+    "check-format": "prettier --check .",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "next": "12.0.10",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-slick": "^0.28.1",
+    "sass": "^1.49.7",
+    "sharp": "^0.30.1",
+    "sitemap": "^7.1.1"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.39",
+    "eslint": "8.9.0",
+    "eslint-config-next": "12.0.10",
+    "eslint-config-prettier": "^8.3.0",
+    "prettier": "^2.5.1",
+    "typescript": "^4.5.5"
+  }
+}
