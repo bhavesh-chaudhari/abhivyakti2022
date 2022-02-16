@@ -1,0 +1,32 @@
+{
+    "name": "Abhivyakti",
+    "short_name": "Abhivyakti",
+    "theme_color": "#F2A345",
+    "background_color": "#1F1F1F",
+    "display": "standalone",
+    "start_url": "http://localhost:3000/",
+    "lang": "en-US",
+    "description": "Abhivyakti is the Annual Cultural Festival of IIIT Nagpur",
+    "icons": [
+        {
+            "src": "/favicons/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/favicons/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "/favicons/favicon-16x16.png",
+            "sizes": "16x16",
+            "type": "image/png"
+        },
+        {
+            "src": "/favicons/favicon-32x32.png",
+            "sizes": "32x32",
+            "type": "image/png"
+        }
+    ]
+}
