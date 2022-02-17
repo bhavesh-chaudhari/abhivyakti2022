@@ -1,0 +1,71 @@
+.hero-container {
+  min-height: 100vh;
+  background:  linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url("../public/images/abhivyakti-hero.svg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  .hero-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+    .main {
+      position: absolute;
+      top: 24vh;
+      h1 {
+        font-size: 3.6rem;
+        font-weight: 700;
+        color: #e3e3e3;
+        letter-spacing: 0.13em;
+        text-shadow: 1px 1px 15px #000;
+      }
+      p {
+        color: #ffffff;
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+        font-weight: 400;
+      }
+      button {
+        background: #f2a345;
+        border: none;
+        font-weight: 600;
+        color: #000000;
+        font-size: 1.5rem;
+        cursor: pointer;
+        padding: 1.2rem 2.5rem;
+        transition: all 0.4s ease;
+        letter-spacing: 0.225em;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 5px 12px 0px;
+        &:hover{
+            transform: scale(1.1);
+            box-shadow: rgba(99, 99, 99, 1) 0px 5px 12px 0px;
+        }
+      }
+    }
+    .presented-by {
+      position: absolute;
+      bottom: 10vh;
+      p {
+        color: #e3e3e3;
+        margin-bottom: 1rem;
+        font-size: 1.2rem;
+        font-weight: 600;
+        letter-spacing: 0.13em;
+      }
+      h3 {
+        color: #ffffff;
+        line-height: 2.6rem;
+        font-weight: 600;
+        font-size: 1.5rem;
+        letter-spacing: 0.1em;
+      }
+    }
+  }
+}
