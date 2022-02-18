@@ -14,7 +14,7 @@ const Navbar = ():JSX.Element => {
       <nav className={styles["navbar"]}>
         <div className={styles["nav-logo"]}>
           <Image
-            src="/svgs/abhivyakti-logo.svg"
+            src="/svgs-to-convert/abhivyakti-logo.svg"
             width={200}
             height={78}
             alt="logo"
@@ -73,13 +73,13 @@ const Navbar = ():JSX.Element => {
           <div className={styles["mobile-menu-logo"]}>
             <div className={styles["mobile-menu-logo-content"]}>
               <Image
-                src="/images/navbar/navlogo.png"
-                height={25}
-                width={120}
+                src="/svgs-to-convert/abhivyakti-logo.svg"
+                height={130}
+                width={130}
                 alt="logo"
               ></Image>
               <hr />
-              <p>Progress over Perfection</p>
+              <p>Proudly Presented by IIITN</p>
             </div>
           </div>
         </div>
