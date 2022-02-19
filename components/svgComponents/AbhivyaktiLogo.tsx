@@ -1,6 +1,7 @@
 import * as React from "react";
+import { SVGProps } from "react";
 
-const SvgAbhivyaktiLogo = (props) => (
+const SvgAbhivyaktiLogo = (props: SVGProps<SVGSVGElement>) => (
   <svg
     width={113}
     height={85}

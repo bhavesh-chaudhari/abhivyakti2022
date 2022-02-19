@@ -1,3 +1,4 @@
+import Link from "next/link";
 import styles from "../../styles/Hero.module.scss"
 
 const Hero = () => {
@@ -7,7 +8,7 @@ const Hero = () => {
         <div className={styles["main"]}>
           <h1>ABHIVYAKTI 2022</h1>
           <p>4th-6th March</p>
-          <button>Browse Events</button>
+          <Link href="/events" >Browse Events</Link>
         </div>
         <div className={styles["presented-by"]}>
           <p>Proudly Presented By</p>

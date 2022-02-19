@@ -1,16 +1,42 @@
-import React, { useState, useEffect, FunctionComponent } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { useRouter } from "next/router";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "../../styles/Navbar.module.scss";
 
-const Navbar = ():JSX.Element => {
-  const [show, setShow] = useState(false);
+const Navbar = (): JSX.Element => {
+  const [show, setShow] = useState<boolean>(false);
+  const navbarEl = useRef(null);
 
   const router = useRouter();
 
+  useEffect(() => {
+    const handleNavbar = () => {
+      if (window.scrollY > window.innerHeight) {
+        console.log("woo")
+        navbarEl.current.classList.add("isFixed");
+      } else {
+        navbarEl.current.classList.remove("isFixed");
+      }
+    };
+
+    if(router.pathname != "/"){
+      navbarEl.current.style.position = "fixed"
+      navbarEl.current.style.background = "#1f1f1f";
+    }
+
+    if (router.pathname === "/") {
+      navbarEl.current.style.position = "absolute"
+      navbarEl.current.style.background = "transparent";
+      window.addEventListener("scroll", handleNavbar);
+      return () => {
+        window.removeEventListener("scroll", handleNavbar);
+      };
+    }
+  }, [router.pathname]);
+
   return (
-    <div className={styles["navbar-container"]}>
+    <div ref={navbarEl} className={styles["navbar-container"]}>
       <nav className={styles["navbar"]}>
         <div className={styles["nav-logo"]}>
           <Image

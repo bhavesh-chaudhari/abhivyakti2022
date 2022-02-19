@@ -1,24 +1,22 @@
 .navbar-container {
   display: flex;
   justify-content: center;
-  align-self: center;
+  align-self: stretch;
   z-index: 1000;
   background: transparent;
   color: white;
-  padding:5px;
-  height: 8vh;
   min-height: 72px;
-  font-family: "Open Sans", sans-serif;
-  position: fixed;
-  width: 100%;
+  position: absolute;
   top: 0;
-  // box-shadow: 0 8px 5px -8px #000;
+  left: 0;
+  width: 100%;
+  padding: 0.5rem 0;
+  background: transparent;
   .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 90%;
-    padding: 3rem 0;
     .nav-logo {
       display: flex;
       justify-content: center;
@@ -77,6 +75,24 @@
   .menu-title,
   .mobile-menu-logo {
     display: none;
+  }
+}
+
+.navbar-container:global(.isFixed){
+  position: fixed !important;
+  animation: fadeIn 0.5s ease 1;
+  padding: 0.5rem;
+  background: #1f1f1f !important;
+}
+
+@keyframes fadeIn {
+  0%{
+    opacity: 0;
+    top: -100%;
+  }
+  100%{
+    opacity: 1;
+    top: 0;
   }
 }
 

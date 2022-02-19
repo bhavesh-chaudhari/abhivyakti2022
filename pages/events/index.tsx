@@ -1,4 +1,5 @@
 import Head from "next/head";
+import EventsContainer from "../../components/eventsContainer/EventsContainer";
 
 const index = () => {
   return (
@@ -6,7 +7,7 @@ const index = () => {
       <Head>
         <title>Abhivyakti 2022 | Events</title>
       </Head>
-      <h1>Events</h1>
+      <EventsContainer></EventsContainer>
     </>
   );
 };
