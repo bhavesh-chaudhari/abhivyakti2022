@@ -87,20 +87,21 @@
     }
     .event-container {
       min-width: 300px;
-      border-radius: 8px;
+      border-radius: 10px;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 25px 0px;
       .content {
         flex-direction: column;
         .details {
           width: 100%;
-          h2{
-              font-size: 2rem;
-              text-align: center;
+          h2 {
+            font-size: 2rem;
+            text-align: center;
           }
-          p{
-              text-align: center;
+          p {
+            text-align: center;
           }
           .fee {
-              margin-top: 1rem;
+            margin-top: 1rem;
             flex-direction: column;
             justify-content: start;
             text-align: center;
