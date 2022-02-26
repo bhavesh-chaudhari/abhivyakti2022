@@ -44,7 +44,7 @@ const eventsData = [
     id: 5,
     eventTitle: "Elocution Battle",
     eventDetails:
-      "It’s a platform where candidates get  to explain their policies and ideas.Each speaker gets a set amount of time.",
+      "Its the event where rhetorician provides his view over the motion under the given instance of time.",
     participationFee: ["80/-"],
     registerLink: "",
     rulebookLink: "",
