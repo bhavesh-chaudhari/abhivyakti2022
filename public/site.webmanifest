@@ -4,7 +4,7 @@
     "theme_color": "#F2A345",
     "background_color": "#1F1F1F",
     "display": "standalone",
-    "start_url": "http://localhost:3000/",
+    "start_url": "https://abhivyakti.vercel.app/",
     "lang": "en-US",
     "description": "Abhivyakti is the Annual Cultural Festival of IIIT Nagpur",
     "icons": [
