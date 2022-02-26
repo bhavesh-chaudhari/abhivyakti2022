@@ -3,6 +3,7 @@ import styles from "../../styles/FromTheTeam.module.scss"
 import Slider from "react-slick";
 import { LeftActive } from '../svgComponents';
 import { RightActive } from '../svgComponents';
+import Link from 'next/link';
 
 // importing data
 import fromTheTeamData from '../../data/fromTheTeamData';
@@ -55,13 +56,19 @@ const FromTheTeam = () => {
     };
 
     return (
-      <div className={styles["container"]}>
+      <div
+        className={styles["container"]}
+      >
         <div className={styles["header"]}>
           <h1>From The Team</h1>
           <span className={styles["view"]}>
-            <span>
-              View All <span>&#x2197;</span>
-            </span>
+            <Link href="/about-us#fromTheTeam" passHref>
+              <a>
+                <span>
+                  View All <span>&#x2197;</span>
+                </span>
+              </a>
+            </Link>
           </span>
         </div>
         <div className={styles["from-carousel-container"]}>

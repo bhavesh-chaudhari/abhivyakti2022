@@ -1,31 +1,39 @@
 import styles from "../../styles/EventsContainer.module.scss";
 
-const Event = () => {
+const Event = (props) => {
+  const {
+    eventTitle,
+    eventDetails,
+    participationFee,
+    registerLink,
+    rulebookLink,
+    dataAos
+  } = props;
+
   return (
-    <div className={styles["event-container"]}>
+    <div data-aos={dataAos} data-aos-duration={800} className={styles["event-container"]}>
       <div className={styles["content"]}>
         <div className={styles["details"]}>
-          <h2>Quizonmania</h2>
-          <p>
-            An intriguing and fun quiz competition that will test your
-            knowledge.There will be 3 quizzes with specific topics.
-          </p>
+          <h2>{eventTitle}</h2>
+          <p>{eventDetails}</p>
           <div className={styles["fee"]}>
             <span>Participation fee: </span>
             <ul>
-              <li>One Quiz - 50/-</li>
-              {/* <li>Two Quiz - 80/-</li>
-              <li>Three Quiz - 100/-</li> */}
+              {participationFee.map((fee: string, index: number) => {
+                return <li key={index}>{fee}</li>;
+              })}
             </ul>
           </div>
         </div>
         <div className={styles["button-links"]}>
-          <a href="#" rel="noreferrer" target="_blank">
+          <a href={registerLink} rel="noreferrer" target="_blank">
             Register Now
           </a>
-          <a href="#" rel="noreferrer" target="_blank">
-            Rulebook
-          </a>
+          {rulebookLink ? (
+            <a href={rulebookLink} rel="noreferrer" target="_blank">
+              Rulebook
+            </a>
+          ) : null}
         </div>
       </div>
     </div>

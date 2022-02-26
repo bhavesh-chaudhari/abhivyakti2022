@@ -1,0 +1,103 @@
+.footer-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem 1rem;
+    background: #2C2C30;
+    .footer-content{
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        width: 80%;
+        min-width: 980px;        
+        h2{
+            font-size: 1.6rem;
+            margin-bottom: 12px;
+        }
+        a{
+            color: rgba(255, 255, 255, 0.54);
+        }
+        .footer-logo{
+            flex: 1;
+        }
+        .query-contact{
+            flex: 1;
+            .query{
+                margin-bottom: 2rem;
+            }
+            .contact{
+                .social-media{
+                    display: flex;
+                    justify-content: flex-start;
+                    margin-bottom: 10px;
+                    a{
+                        margin-right: 1rem;
+                    }
+                    .img{
+                        margin-left: 1rem !important;
+                    }
+                }
+            }
+        }
+        .sponsors{
+            flex: 1;
+            transform: translate(25%, 0);
+            .sponsor{
+                img{
+                    border-radius: 10px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .footer-container{
+        .footer-content{
+            min-width: 550px;
+            h2{
+                font-size: 1.3rem;
+            }
+            .footer-logo{
+                display: none;
+            }
+            .query-contact{
+                .query{
+                    transform: translate(0);
+                    margin-bottom: 2.7rem;
+                }
+                .contact{
+                    transform: translate(0);
+                }
+            }
+            .sponsors{
+                transform: translate(25%, 0);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .footer-container{
+        padding: 1rem;
+        .footer-content{
+            flex-direction: column;
+            min-width: 0;
+            width: 95%;
+            h2{
+                font-size: 1.4rem;
+            }
+            .query-contact{
+                width: 100%;
+                margin-bottom: 1.7rem;
+                .query{
+                    margin-bottom: 1.7rem;
+                }
+            }
+            .sponsors{
+                width: 100%;
+                transform: translate(0);
+            }
+        }
+    }   
+}

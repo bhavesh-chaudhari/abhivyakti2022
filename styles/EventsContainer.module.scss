@@ -4,6 +4,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  margin-bottom: 5rem;
   .heading {
     h1 {
       font-size: 3rem;
@@ -24,6 +25,7 @@
       display: flex;
       justify-content: space-between;
       align-items: stretch;
+      width: 100%;
       .details {
         width: 80%;
         h2 {

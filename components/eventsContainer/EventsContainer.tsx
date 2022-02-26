@@ -1,5 +1,6 @@
 import Event from "./Event";
 import styles from "../../styles/EventsContainer.module.scss";
+import eventsData from "../../data/eventsData";
 
 const EventsContainer = () => {
   return (
@@ -8,13 +9,11 @@ const EventsContainer = () => {
         <div className={styles["heading"]}>
           <h1>Events</h1>
         </div>
-        <Event></Event>
-        <Event></Event>
-        <Event></Event>
-        <Event></Event>
-        <Event></Event>
-        <Event></Event>
-        <Event></Event>
+        {
+          eventsData.map(event=>{
+            return <Event key={event.id} {...event} ></Event>;
+          })
+        }
       </div>
     </>
   );

@@ -1,0 +1,164 @@
+.teams-container {
+  margin-top: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5rem;
+  span{
+    border: 5px solid #f2a345 !important;
+  }
+  img {
+    filter: grayscale(100%);
+  }
+  .header h1 {
+    font-size: 2.5rem;
+  }
+  .team-grid {
+    margin-top: 3rem;
+    width: 90%;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 3;
+    grid-template-rows: 3;
+    gap: 1rem;
+    row-gap: 2.5rem;
+    & > div:nth-child(1) {
+      grid-area: 1/3 / span 1 / span 1;
+    }
+
+    & > div:nth-child(2) {
+      grid-area: 2/1 / span 1 / span 1;
+    }
+    & > div:nth-child(3) {
+      grid-area: 2/5 / span 1 / span 1;
+    }
+    & > div:nth-child(4) {
+      grid-area: 3/1 / span 1 / span 1;
+    }
+    & > div:nth-child(5) {
+      grid-area: 3/5 / span 1 / span 1;
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .teams-container {
+    .team-grid {
+      width: 100%;
+      grid-template-columns: auto auto;
+      grid-template-rows: 3;
+      row-gap: 1.5rem;
+      img{
+        width: 100px !important;
+      }
+      & > div:nth-child(1) {
+        grid-area: 1/1/ span 1 / span 2;
+      }
+
+      & > div:nth-child(2) {
+        grid-area: 2/1 / span 1 / span 1;
+      }
+      & > div:nth-child(3) {
+        grid-area: 2/2 / span 1 / span 1;
+      }
+      & > div:nth-child(4) {
+        grid-area: 3/1 / span 1 / span 1;
+      }
+      & > div:nth-child(5) {
+        grid-area: 3/2 / span 1 / span 1;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .teams-container{
+    .team-grid{
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+.lead-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.lead-image {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  position: relative;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.lead-image img:nth-child(1) {
+  z-index: 500;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 2px solid greenyellow;
+}
+
+.lead-details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  line-height: 2rem;
+  padding-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.lead-details h2 {
+  text-align: center;
+}
+
+.lead-details h3,
+.lead-details h4 {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.54);
+  font-weight: 500;
+  line-height: 1.6rem;
+}
+
+.lead-card a {
+  text-decoration: none;
+}
+
+@media screen and (max-width: 700px) {
+  .lead-details{
+    padding-top: 1rem;
+  }
+  .lead-details h2 {
+    font-size: 1rem;
+    line-height: 1.2rem;
+    margin-bottom: 4px;
+  }
+  .lead-details h3 {
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+  }
+  .lead-details h4 {
+    font-size: 0.6rem;
+    line-height: 1.2rem;
+  }
+  .lead-image img:nth-child(1) {
+    z-index: 500;
+    width: 120px;
+    height: 120px;
+  }
+  .lead-image {
+    width: 100px;
+    background: red;
+  }
+  .lead-details {
+    width: 180px;
+  }
+}

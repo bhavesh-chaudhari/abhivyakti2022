@@ -10,30 +10,30 @@ const Navbar = (): JSX.Element => {
 
   const router = useRouter();
 
-  useEffect(() => {
-    const handleNavbar = () => {
-      if (window.scrollY > window.innerHeight) {
-        console.log("woo")
-        navbarEl.current.classList.add("isFixed");
-      } else {
-        navbarEl.current.classList.remove("isFixed");
-      }
-    };
+  // useEffect(() => {
+  //   const handleNavbar = () => {
+  //     if (window.scrollY > window.innerHeight) {
+  //       console.log("woo")
+  //       navbarEl.current.classList.add("isFixed");
+  //     } else {
+  //       navbarEl.current.classList.remove("isFixed");
+  //     }
+  //   };
 
-    if(router.pathname != "/"){
-      navbarEl.current.style.position = "fixed"
-      navbarEl.current.style.background = "#1f1f1f";
-    }
+  //   if(router.pathname != "/"){
+  //     navbarEl.current.style.position = "fixed"
+  //     navbarEl.current.style.background = "#1f1f1f";
+  //   }
 
-    if (router.pathname === "/") {
-      navbarEl.current.style.position = "absolute"
-      navbarEl.current.style.background = "transparent";
-      window.addEventListener("scroll", handleNavbar);
-      return () => {
-        window.removeEventListener("scroll", handleNavbar);
-      };
-    }
-  }, [router.pathname]);
+  //   if (router.pathname === "/") {
+  //     navbarEl.current.style.position = "absolute"
+  //     navbarEl.current.style.background = "transparent";
+  //     window.addEventListener("scroll", handleNavbar);
+  //     return () => {
+  //       window.removeEventListener("scroll", handleNavbar);
+  //     };
+  //   }
+  // }, [router.pathname]);
 
   return (
     <div ref={navbarEl} className={styles["navbar-container"]}>

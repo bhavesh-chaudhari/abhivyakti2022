@@ -1,0 +1,27 @@
+.from-the-team-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 6rem;
+  & > div{
+      width: 80%;
+      margin-bottom: 1rem;
+  }
+  h1 {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 980px) {
+    .from-the-team-section{
+        margin-bottom: 3rem;
+        & > div{
+            margin-bottom: 4rem;
+        }
+        h1{
+            margin-bottom: 2rem;
+        }
+    }
+}
