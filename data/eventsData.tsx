@@ -6,7 +6,7 @@ const eventsData = [
       "Pitch Perfect is a singing competition under Abhivyakti 2022 where participants will be judged on their vocals only.",
     participationFee: ["80/-"],
     registerLink: "https://forms.gle/ntYLQsRh2gG9oJGo7",
-    rulebookLink: "",
+    rulebookLink: "/pdf/abhivyakti-pitch-perfect-rulebook.pdf",
     dataAos: "fade-up"
   },
   {
@@ -16,7 +16,7 @@ const eventsData = [
       "In 5 minutes, participants have to show his/her talent like a magic trick, acting,drama or anything else in a video clip.",
     participationFee: ["80/-"],
     registerLink: "https://forms.gle/bAqNyYotJtdooptC7",
-    rulebookLink: "",
+    rulebookLink: "/pdf/abhivyakti-got-talent-rulebook.pdf",
     dataAos: "fade-up"
   },
   {
@@ -26,7 +26,7 @@ const eventsData = [
       "Participants will have to choose a theme of their own and dress up according to it.",
     participationFee: ["80/-"],
     registerLink: "https://forms.gle/hVMF9GmwBLLzVkZB9",
-    rulebookLink: "",
+    rulebookLink: "/pdf/abhivyakti-personality-contest-rulebook.pdf",
     dataAos: "zoom-in"
   },
   {
@@ -37,7 +37,7 @@ const eventsData = [
     participationFee: ["80/-"],
     registerLink:
       "https://docs.google.com/forms/d/e/1FAIpQLSfXTVogU0Q6Yypk1SfjGfL9H08n6j0ydFGFBV6RBQO_HTjjcw/viewform?usp=sf_link",
-    rulebookLink: "",
+    rulebookLink: "/pdf/abhivyakti-work-it-up-rulebook.pdf",
     dataAos: "zoom-in"
   },
   {
@@ -46,8 +46,8 @@ const eventsData = [
     eventDetails:
       "Its the event where rhetorician provides his view over the motion under the given instance of time.",
     participationFee: ["80/-"],
-    registerLink: "",
-    rulebookLink: "",
+    registerLink: "https://forms.gle/F5NnEGNW4QkfMCtv7",
+    rulebookLink: "/pdf/abhivyakti-elocution-battle-rulebook.pdf",
     dataAos: "zoom-in"
   },
   {
@@ -57,8 +57,7 @@ const eventsData = [
       "A competition in which participants will be asked to submit the Sarcastic joke made by them .",
     participationFee: ["30/-"],
     registerLink: "https://forms.gle/h6TpV7SFrQqPzbcP8",
-    rulebookLink:
-      "https://drive.google.com/file/d/1qxH-etHPf4jRyPnbbi8RGpcvaQu_bdzy/view?usp=sharing",
+    rulebookLink: "/pdf/abhivyakti-meme-making-competition-rulebook.pdf",
     dataAos: "zoom-in"
   },
   {
@@ -72,7 +71,7 @@ const eventsData = [
       "Three Quizzes - 60/-"
     ],
     registerLink: "https://forms.gle/P7mfatwkMJNhXRCw6",
-    rulebookLink: "",
+    rulebookLink: "/pdf/abhivyakti-quizomania-rulebook.pdf",
     dataAos: "zoom-in"
   },
   {
@@ -82,8 +81,7 @@ const eventsData = [
       "A photography enthusiast centric event hosted by the Probe student media body.",
     participationFee: ["50/-"],
     registerLink: "https://forms.gle/FpXaw1dMx9nL4oD27",
-    rulebookLink:
-      "https://docs.google.com/document/d/1OvgZv4YBeyYrF7YfTtkGHWl67gJZyn8tL7QXGPh_tWg/edit?usp=sharing",
+    rulebookLink: "/pdf/abhivyakti-picart-rulebook.pdf",
     dataAos: "zoom-in"
   }
 ];

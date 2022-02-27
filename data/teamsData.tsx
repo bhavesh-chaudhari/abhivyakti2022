@@ -17,18 +17,25 @@ const teamsData = [
     title: "Social Media",
     name: "Srinivas Naik"
   },
-  {
+   {
     id: 4,
+    image: "/images/team/mohitKothari.png",
+    title: "Design",
+    name: "Mohit Kothari"
+  },
+  {
+    id: 5,
     image: "/images/team/jatinChhangani.png",
     title: "Web Development",
     name: "Jatin Chhangani"
   },
   {
-    id: 5,
+    id: 6,
     image: "/images/team/bhaveshChaudhari.png",
     title: "Web Development",
-    name: "Bhavesh Chaudhari",
-  }
+    name: "Bhavesh Chaudhari"
+  },
+ 
 ];
 
 export default teamsData;

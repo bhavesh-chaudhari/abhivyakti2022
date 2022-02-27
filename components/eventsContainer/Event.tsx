@@ -30,7 +30,7 @@ const Event = (props) => {
             Register Now
           </a>
           {rulebookLink ? (
-            <a href={rulebookLink} rel="noreferrer" target="_blank">
+            <a href={rulebookLink} download>
               Rulebook
             </a>
           ) : null}

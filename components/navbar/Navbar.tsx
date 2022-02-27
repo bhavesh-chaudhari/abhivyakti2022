@@ -39,12 +39,16 @@ const Navbar = (): JSX.Element => {
     <div ref={navbarEl} className={styles["navbar-container"]}>
       <nav className={styles["navbar"]}>
         <div className={styles["nav-logo"]}>
-          <Image
-            src="/svgs-to-convert/abhivyakti-logo.svg"
-            width={200}
-            height={78}
-            alt="logo"
-          ></Image>
+          <Link href="/" passHref>
+            <a>
+              <Image
+                src="/svgs-to-convert/abhivyakti-logo.svg"
+                width={200}
+                height={78}
+                alt="logo"
+              ></Image>
+            </a>
+          </Link>
         </div>
         <div
           onClick={() => setShow((prevState) => !prevState)}
