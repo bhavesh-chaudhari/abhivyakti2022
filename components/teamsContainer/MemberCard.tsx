@@ -9,7 +9,6 @@ const MemberCard = (props) => {
     <div className={styles["lead-card"]}>
       <div className={styles["lead-image"]}>
         <Image width={"200px"} height={"200px"} src={image} alt={name} />
-        <div className={styles["glow"]}></div>
       </div>
       <div className={styles["lead-details"]}>
         <h2>{title}</h2>

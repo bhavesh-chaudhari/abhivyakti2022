@@ -1,4 +1,4 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import Image from "next/image";
 import styles from "../../../styles/FromTheTeamCard.module.scss";
 
@@ -9,12 +9,10 @@ const Card = (props) => {
 
   const media = useRef(null);
   const content = useRef(null);
-  const paraRef = useRef(null);
+  const paraRef = useRef(null)
 
   const More = () => {
     setReadMore(!readMore);
-    console.log("lol");
-    media.current.style.color = "";
     if (readMore) {
       content.current.style.height = "100%";
       media.current.style.height = "0%";
@@ -23,11 +21,14 @@ const Card = (props) => {
     } else {
       content.current.style.height = "60%";
       media.current.style.height = "40%";
-      paraRef.current.scrollTo(0, 0);
       paraRef.current.style.overflow = "hidden";
       paraRef.current.style.height = "8em";
     }
   };
+
+  useEffect(()=>{
+    paraRef.current.scrollTo(0, 0)
+  }, [readMore])
 
   return (
     <div data-aos={animation} className={styles["card-container"]}>
@@ -52,7 +53,7 @@ const Card = (props) => {
             <h2>{cardTitle}</h2>
           </div>
           <div className={styles["card-para"]}>
-            <p ref={paraRef}>{cardPara}</p>
+            <p id="lol" ref={paraRef}>{cardPara}</p>
           </div>
           <button className={styles["read-btn"]} onClick={More}>
             {readMore ? "Read More" : "Read Less"}
