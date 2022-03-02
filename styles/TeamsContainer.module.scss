@@ -37,10 +37,19 @@
     }
     & > div:nth-child(5) {
       grid-area: 3/1 / span 1 / span 1;
-      transform: translate(50%, 0);
     }
     & > div:nth-child(6) {
+      grid-area: 3/3 / span 1 / span 1;
+    }
+    & > div:nth-child(7) {
       grid-area: 3/5 / span 1 / span 1;
+    }
+    & > div:nth-child(8) {
+      grid-area: 4/1 / span 1 / span 1;
+      transform: translate(50%, 0);
+    }
+    & > div:nth-child(9) {
+      grid-area: 4/5 / span 1 / span 1;
       transform: translate(-50%, 0);
     }
   }
@@ -54,12 +63,12 @@
       img {
         width: 120px !important;
       }
-      & > div:nth-child(5) {
-        grid-area: 3/1 / span 1 / span 1;
+      & > div:nth-child(8) {
+        grid-area: 4/1 / span 1 / span 1;
         transform: translate(30%, 0);
       }
-      & > div:nth-child(6) {
-        grid-area: 3/5 / span 1 / span 1;
+      & > div:nth-child(9) {
+        grid-area: 4/5 / span 1 / span 1;
         transform: translate(-30%, 0);
       }
     }
@@ -96,10 +105,19 @@
       }
       & > div:nth-child(5) {
         grid-area: 3/3 / span 1 / span 1;
-        transform: translate(0, 0);
       }
       & > div:nth-child(6) {
-        grid-area: 4/1 / span 1 / span 3;
+        grid-area: 4/1 / span 1 / span 1;
+      }
+      & > div:nth-child(7) {
+        grid-area: 4/3 / span 1 / span 1;
+      }
+      & > div:nth-child(8) {
+        grid-area: 5/1 / span 1 / span 1;
+        transform: translate(0, 0);
+      }
+      & > div:nth-child(9) {
+        grid-area: 5/3 / span 1 / span 3;
         transform: translate(0, 0);
       }
     }
