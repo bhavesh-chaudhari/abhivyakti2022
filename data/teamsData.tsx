@@ -41,14 +41,26 @@ const teamsData = [
     title: "Design",
     name: "Mohit Kothari"
   },
-  {
+   {
     id: 8,
+    image: "/images/team/sneha.png",
+    title: "Marketing",
+    name: "Sneha Anantha"
+  },
+  {
+    id: 9,
+    image: "/images/team/uditAgarwal.png",
+    title: "Marketing",
+    name: "Udit Agarwal"
+  },
+  {
+    id: 10,
     image: "/images/team/jatinChhangani.png",
     title: "Web Development",
     name: "Jatin Chhangani"
   },
   {
-    id: 9,
+    id: 11,
     image: "/images/team/bhaveshChaudhari.png",
     title: "Web Development",
     name: "Bhavesh Chaudhari"
