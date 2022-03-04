@@ -37,12 +37,12 @@
     }
     & > div:nth-child(5) {
       grid-area: 3/1 / span 1 / span 1;
-      transform: translate(50%, 0);
+      transform: translate(65%, 0);
 
     }
     & > div:nth-child(6) {
       grid-area: 3/5 / span 1 / span 1;
-      transform: translate(-50%, 0);
+      transform: translate(-65%, 0);
 
     }
     & > div:nth-child(7) {
@@ -56,11 +56,11 @@
     }
       & > div:nth-child(10) {
       grid-area: 5/1 / span 1 / span 1;
-      transform: translate(50%, 0);
+      transform: translate(65%, 0);
     }
     & > div:nth-child(11) {
       grid-area: 5/5 / span 1 / span 1;
-      transform: translate(-50%, 0);
+      transform: translate(-65%, 0);
     }
   }
 }
